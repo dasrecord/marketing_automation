@@ -31,9 +31,8 @@ PASSWORD = config.get('Email', 'PASSWORD')
 BUFFER = 60  # The delay (in seconds) between each email. Adjust as needed to avoid being flagged for spamming.
 
 # SMTP settings
-SMTP_SERVER = 'smtp.gmail.com'  # The SMTP server for your email provider. This is set to Gmail's SMTP server by default.
-SMTP_PORT = 587  # The port to use for the SMTP server. This is set to 587 by default, which is the standard port for SMTP.
-
+SMTP_SERVER = 'smtp.gmail.com'
+SMTP_PORT = 587  
 names, emails = get_contacts('msj_leads.csv') # remember to include the path to your csv contact file
 message_template = get_message('message.html') # remember to edit the message file to include your own message
 
