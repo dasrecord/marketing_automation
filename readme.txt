@@ -28,9 +28,9 @@ SEE: message.txt
 
 4. Run `emailer.py` to send emails.
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system.
+## Additional Notes
+You may need to set up "Sign in with app passwords" on your gmail.
+URL: https://support.google.com/accounts/answer/185833?hl=en
 
 ## Built With
 
