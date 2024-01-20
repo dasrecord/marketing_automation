@@ -20,13 +20,17 @@ A step by step series of examples that tell you how to get a development environ
 1. Clone the repository to your local machine.
 URL: https://github.com/dasrecord/marketing_automation.git
 
-2. Add your contact list file to the project directory
+2. Create a `config.ini` file in the project directory. This file should contain your email settings. Here's an example of what it should look like:
+
+```ini
+[Email]
+MY_ADDRESS = your-email@example.com
+PASSWORD = your-email-password
+```
+3. Add your contact list file to the project directory.
 EXAMPLE: msj_leads.csv
 
-3. Format your message template in HTML
-SEE: message.html
-
-4. Modify then  Run `emailer.py` to send emails.
+4. Run `emailer.py` to send emails.
 
 ## Additional Notes
 You may need to set up "Sign in with app passwords" on your gmail.

@@ -1,8 +1,11 @@
 import smtplib
 import csv
 import time
+import configparser
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+
+
 
 def get_contacts(filename):
     names, emails = [], []
@@ -18,9 +21,13 @@ def get_message(filename):
     with open(filename, 'r') as file:
         return file.read()
 
+# Read configuration file
+config = configparser.ConfigParser()
+config.read('config.ini')
+
 # Email settings
-MY_ADDRESS = 'xxxx@xxxx.com'  # The email address you're sending from. Replace with your own email address.
-PASSWORD = 'xxxx xxxx xxxx xxxx'  # The 'App Password' for your email account. Replace with your own 'App Password'.
+MY_ADDRESS = config.get('Email', 'MY_ADDRESS')
+PASSWORD = config.get('Email', 'PASSWORD')
 
 # Email sending settings
 BUFFER = 60  # The delay (in seconds) between each email. Adjust as needed to avoid being flagged for spamming.
