@@ -18,14 +18,19 @@ def get_message(filename):
     with open(filename, 'r') as file:
         return file.read()
 
-MY_ADDRESS = 'xxxx@xxxx.com' # Use your own email address
-PASSWORD = 'xxxx xxxx xxxx xxxx'  # Use your 'App Password' here
-BUFFER = 10 # Seconds of delay between each email
-SMTP_SERVER = 'smtp.gmail.com'
-SMTP_PORT = 587
+# Email settings
+MY_ADDRESS = 'xxxx@xxxx.com'  # The email address you're sending from. Replace with your own email address.
+PASSWORD = 'xxxx xxxx xxxx xxxx'  # The 'App Password' for your email account. Replace with your own 'App Password'.
 
-names, emails = get_contacts('msj_leads.csv')
-message_template = get_message('message.html')
+# Email sending settings
+BUFFER = 10  # The delay (in seconds) between each email. Adjust as needed to avoid being flagged for spamming.
+
+# SMTP settings
+SMTP_SERVER = 'smtp.gmail.com'  # The SMTP server for your email provider. This is set to Gmail's SMTP server by default.
+SMTP_PORT = 587  # The port to use for the SMTP server. This is set to 587 by default, which is the standard port for SMTP.
+
+names, emails = get_contacts('msj_leads.csv') # remember to include the path to your csv contact file
+message_template = get_message('message.html') # remember to edit the message file to include your own message
 
 s = smtplib.SMTP(host=SMTP_SERVER, port=SMTP_PORT)
 s.starttls()

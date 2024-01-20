@@ -26,7 +26,7 @@ EXAMPLE: msj_leads.csv
 3. Format your message template in HTML
 SEE: message.html
 
-4. Run `emailer.py` to send emails.
+4. Modify then  Run `emailer.py` to send emails.
 
 ## Additional Notes
 You may need to set up "Sign in with app passwords" on your gmail.
