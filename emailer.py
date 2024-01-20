@@ -19,11 +19,9 @@ def get_message(filename):
     with open(filename, 'r') as file:
         return file.read()
 
-# Read configuration file
 config = configparser.ConfigParser()
 config.read('config.ini')
 
-# Email settings
 MY_ADDRESS = config.get('Email', 'MY_ADDRESS')
 PASSWORD = config.get('Email', 'PASSWORD')
 
