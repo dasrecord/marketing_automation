@@ -5,8 +5,6 @@ import configparser
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-
-
 def get_contacts(filename):
     names, emails = [], []
     with open(filename, newline='') as file:
@@ -52,4 +50,5 @@ for name, email in zip(names, emails):
     msg.attach(MIMEText(message, 'html'))  # 'html' indicates that the email content is HTML
     s.send_message(msg)
     time.sleep(BUFFER)
+    print(f"Email sent to {name} at {email}")
 s.quit()
