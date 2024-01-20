@@ -17,7 +17,7 @@ What things you need to install the software and how to install them:
 
 A step by step series of examples that tell you how to get a development environment running:
 
-1. Clone the repository to your local machine.
+1. Clone the repository to your local machine.  
 URL: https://github.com/dasrecord/marketing_automation.git
 
 2. Create a `config.ini` file in the project directory. This file should contain your email settings. Here's an example of what it should look like:
@@ -33,7 +33,7 @@ EXAMPLE: msj_leads.csv
 4. Run `emailer.py` to send emails.
 
 ## Additional Notes
-You may need to set up "Sign in with app passwords" on your gmail.
+You may need to set up "Sign in with app passwords" on your gmail.  
 URL: https://support.google.com/accounts/answer/185833?hl=en
 
 ## Built With
