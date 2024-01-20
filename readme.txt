@@ -21,10 +21,10 @@ A step by step series of examples that tell you how to get a development environ
 URL: https://github.com/dasrecord/marketing_automation.git
 
 2. Add your contact list file to the project directory
-EXAMPLE: msj_ledas.csv
+EXAMPLE: msj_leads.csv
 
 3. Format your message template in HTML
-SEE: message.txt
+SEE: message.html
 
 4. Run `emailer.py` to send emails.
 
