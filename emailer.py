@@ -25,7 +25,7 @@ SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
 
 names, emails = get_contacts('msj_leads.csv')
-message_template = get_message('message.txt')
+message_template = get_message('message.html')
 
 s = smtplib.SMTP(host=SMTP_SERVER, port=SMTP_PORT)
 s.starttls()
@@ -37,8 +37,7 @@ for name, email in zip(names, emails):
     msg['From'] = MY_ADDRESS
     msg['To'] = email
     msg['Subject'] = "This is a test" # Change this to your own subject
-    msg.attach(MIMEText(message, 'html'))
+    msg.attach(MIMEText(message, 'html'))  # 'html' indicates that the email content is HTML
     s.send_message(msg)
-    time.sleep(buffer)
-
+    time.sleep(BUFFER)
 s.quit()
