@@ -1,0 +1,8 @@
+<html>
+<body>
+<p>Hello PERSON_NAME,</p>
+<p>This is a test message.</p>
+<p>Please check out my newest release:</p>
+<p><a href="https://festivall.ca/">https://festivall.ca/</a></p>
+</body>
+</html>
