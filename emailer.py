@@ -23,7 +23,7 @@ MY_ADDRESS = 'xxxx@xxxx.com'  # The email address you're sending from. Replace w
 PASSWORD = 'xxxx xxxx xxxx xxxx'  # The 'App Password' for your email account. Replace with your own 'App Password'.
 
 # Email sending settings
-BUFFER = 10  # The delay (in seconds) between each email. Adjust as needed to avoid being flagged for spamming.
+BUFFER = 60  # The delay (in seconds) between each email. Adjust as needed to avoid being flagged for spamming.
 
 # SMTP settings
 SMTP_SERVER = 'smtp.gmail.com'  # The SMTP server for your email provider. This is set to Gmail's SMTP server by default.
